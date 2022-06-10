@@ -29,6 +29,18 @@
 <body>
     <a href="#main" class="skip">본문 바로가기</a>
     <footer id="footer">
+        <div class="goUpBtnWrap" :class="state">
+            <h2 class="hide">상단으로 바로가기</h2>
+            <a href="#" class="goupbtn" @click.prevent="onClickUp">TOP</a>           
+        </div>
+        <div class="domiChat">
+            <div>
+                <a href="#">
+                    <img src="./images/ico-domi.png" alt="도미챗 아이콘">
+                    <span>도미챗으로 주문하기</span>
+                </a>
+            </div>
+        </div>
         <div class="footerWrap">
             <div class="footerWrapTop">
                 <ul>
@@ -132,5 +144,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/dominoFooter.js"></script>
 </body>
 </html>
