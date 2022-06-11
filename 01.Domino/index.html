@@ -73,6 +73,124 @@
                 </div>
             </div>
         </section>
+        <section class="productsWrap" id="mainSectionProduct">
+            <div class="productsWrapContainer">
+                <div class="productsWrapContainerTitle">
+                    <h2><a href="" :class="{on:!toggle}" @click.prevent="onClickToggle">실시간 베스트</a></h2>
+                    <h2><a href="" :class="{on:toggle}" @click.prevent="onClickToggle">프리미엄 피자</a></h2>
+                </div>
+                <div class="productsWrapContainerPizza clear">
+                    <div class="productsWrapContainerPizzaBest" v-if="!toggle">
+                        <ul class="productsWrapContainerPizzaBestUpper">
+                            <li v-for="v in bestUpperArray" :key="v.number">
+                                <a href="">
+                                    <div class="imageWrap">
+                                        <img :src="v.src" :alt="v.alt">
+                                    </div>
+                                    <div class="textWrap clear">
+                                        <div class="textWrapLeft">
+                                            <h3>{{v.title}}</h3>
+                                            <div>
+                                                <span class="large">{{v.price1}}</span>
+                                                <span class="medium">{{v.price2}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="textWrapRight">
+                                            <div class="quickOrder">{{v.order}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <strong :class="v.rank" v-if="v.top">
+                                    BEST<br />{{v.number}}
+                                </strong>
+                                <strong :class="v.rank" v-else>
+                                    {{v.number}}
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="productsWrapContainerPizzaBestBottom">
+                            <li v-for="v in bestBottomArray" :key="v.number">
+                                <a href="">
+                                    <div class="imageWrap">
+                                        <img :src="v.src" :alt="v.alt">
+                                    </div>
+                                    <div class="textWrap clear">
+                                        <div class="textWrapLeft">
+                                            <h3>{{v.title}}</h3>
+                                            <div>
+                                                <span class="large">{{v.price1}}</span>
+                                                <span class="medium">{{v.price2}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="textWrapRight">
+                                            <div class="quickOrder">{{v.order}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <strong :class="v.rank" v-if="v.top">
+                                    BEST<br />{{v.number}}
+                                </strong>
+                                <strong :class="v.rank" v-else>
+                                    {{v.number}}
+                                </strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="productsWrapContainerPizzaPremium" v-else>
+                        <ul class="productsWrapContainerPizzaPremiumUpper">
+                            <li v-for="v in premiumUpperArray" :key="v.number">
+                                <a href="">
+                                    <div class="imageWrap">
+                                        <img :src="v.src" :alt="v.alt">
+                                    </div>
+                                    <div class="textWrap clear">
+                                        <div class="textWrapLeft">
+                                            <h3>{{v.title}}</h3>
+                                            <span class="large">{{v.price1}}</span>
+                                            <span class="medium">{{v.price2}}</span>
+                                        </div>
+                                        <div class="textWrapRight">
+                                            <div class="quickOrder">{{v.order}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <strong :class="v.rank" v-if="v.top">
+                                    BEST<br />{{v.number}}
+                                </strong>
+                                <strong :class="v.rank" v-else>
+                                    {{v.number}}
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="productsWrapContainerPizzaPremiumBottom">
+                            <li v-for="v in premiumBottomArray" :key="v.number">
+                                <a href="">
+                                    <div class="imageWrap">
+                                        <img :src="v.src" :alt="v.alt">
+                                    </div>
+                                    <div class="textWrap clear">
+                                        <div class="textWrapLeft">
+                                            <h3>{{v.title}}</h3>
+                                            <span class="large">{{v.price1}}</span>
+                                            <span class="medium">{{v.price2}}</span>
+                                        </div>
+                                        <div class="textWrapRight">
+                                            <div class="quickOrder">{{v.order}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <strong :class="v.rank" v-if="v.top">
+                                    BEST<br />{{v.number}}
+                                </strong>
+                                <strong :class="v.rank" v-else>
+                                    {{v.number}}
+                                </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer id="footer">
         <div class="goUpBtnWrap" :class="state">
@@ -197,5 +315,6 @@
         </div>
     </footer>
     <script src="./js/dominoFooter.js"></script>
+    <script src="./js/dominoMainProducts.js"></script>
 </body>
 </html>
