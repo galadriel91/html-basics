@@ -14,24 +14,24 @@ const main = new Vue({
         // MainProducts
 
         bestUpperArray:[
-            {src:"./images/potato.jpg" , alt:"포테이토 피자" , title:"포테이토" , price1:"27,900원" , price2:"21,000원", order:"바로주문" , number:1 , rank:'best' , top:true},
-            {src:"./images/bulgogi.jpg" , alt:"불고기 피자" , title:"리얼 불고기" , price1:"27,900원" , price2:"21,000원", order:"바로주문" , number:2 , rank:'normal' , },
-            {src:"./images/best_quatro.jpg" , alt:"베스트 콰트로" , title:"베스트 콰트로" , price1:"34,900원" , price2:"27,000원", order:"바로주문" , number:3 , rank:'normal'}
+            {src:"./images/c_potato.jpg" , alt:"포테이토 피자" , title:"포테이토" , price1:"26,900원" , price2:"20,000원", order:"바로주문" , number:1 , rank:'best' , top:true},
+            {src:"./images/c_bulgogi.jpg" , alt:"불고기 피자" , title:"리얼 불고기" , price1:"28,900원" , price2:"22,000원", order:"바로주문" , number:2 , rank:'normal' , },
+            {src:"./images/c_goguma.jpg" , alt:"베스트 콰트로" , title:"우리 고구마" , price1:"29,900원" , price2:"23,000원", order:"바로주문" , number:3 , rank:'normal'}
         ],
         bestBottomArray:[
-            {src:"./images/goguma.jpg" , alt:"우리 고구마" , title:"우리 고구마" , price1:"29,900원" , price2:"23,000원", order:"바로주문" , number:4 , rank:'normal'},
-            {src:"./images/cheese.jpg" , alt:"치즈 가든" , title:"치즈가든" , price1:"27,900원" , price2:"21,000원", order:"바로주문" , number:5 , rank:'normal'},
-            {src:"./images/bisteka.jpg" , alt:"와규 앤 비스테카" , title:"와규 앤 비스테카" , price1:"33,900원" , price2:"28,000원", order:"바로주문" , number:6 , rank:'normal'}
+            {src:"./images/c_peper.jpg" , alt:"페퍼로니 피자" , title:"페퍼로니" , price1:"24,900원" , price2:"18,000원", order:"바로주문" , number:4 , rank:'normal'},
+            {src:"./images/c_shirimp.jpg" , alt:"하와이안 슈림프" , title:"하와이안 슈림프" , price1:"28,900원" , price2:"22,000원", order:"바로주문" , number:5 , rank:'normal'},
+            {src:"./images/c_bacon.jpg" , alt:"베이컨 체더치즈" , title:"베이컨 체더치즈" , price1:"26,900원" , price2:"20,000원", order:"바로주문" , number:6 , rank:'normal'}
         ],
         premiumUpperArray:[
-            {src:"./images/moonbomb.jpg" , alt:"문어밤 슈림프 피자" , title:"문어밤 슈림프" , price1:"34,900원" , price2:"29,000원", order:"바로주문" , number:1, rank:'best' ,top:true},
-            {src:"./images/meatmeat.jpg" , alt:"미트 미트 미트" , title:"미트 미트 미트" , price1:"33,900원" , price2:"28,000원", order:"바로주문" , number:2 , rank:'normal'},
-            {src:"./images/best_quatro.jpg" , alt:"베스트 콰트로" , title:"베스트 콰트로" , price1:"34,900원" , price2:"27,000원", order:"바로주문" , number:3 , rank:'normal'}
+            {src:"./images/p_best.jpg" , alt:"베스트 콰트로" , title:"베스트 콰트로" , price1:"35,900원" , price2:"29,000원", order:"바로주문" , number:1, rank:'best' ,top:true},
+            {src:"./images/p_black.jpg" , alt:"블랙 앵거스 스테이크" , title:"블랙 앵거스 스테이크" , price1:"34,900원" , price2:"29,000원", order:"바로주문" , number:2 , rank:'normal'},
+            {src:"./images/p_block.jpg" , alt:"블록버스터4" , title:"블록버스터4" , price1:"35,900원" , price2:"29,000원", order:"바로주문" , number:3 , rank:'normal'}
         ],
         premiumBottomArray:[
-            {src:"./images/bisteka.jpg" , alt:"와규 앤 비스테카" , title:"와규 앤 비스테카" , price1:"33,900원" , price2:"28,000원", order:"바로주문" , number:4 , rank:'normal'},
-            {src:"./images/p_blacktiger.jpg" , alt:"치즈케이크 블랙타이거" , title:"치즈케이크 블랙타이거" , price1:"35,900원" , price2:"29,000원", order:"바로주문" , number:5 , rank:'normal'},
-            {src:"./images/shirimp.jpg" , alt:"블랙타이거 슈림프" , title:"블랙타이거 슈림프" , price1:"33,900원" , price2:"28,000원", order:"바로주문" , number:6 , rank:'normal'}
+            {src:"./images/p_cheese.jpg" , alt:"치즈 퐁듀 파이어 미트" , title:"치즈 퐁듀 파이어 미트" , price1:"34,900원" , price2:"29,000원", order:"바로주문" , number:4 , rank:'normal'},
+            {src:"./images/p_master.jpg" , alt:"마스터 트리플 코스" , title:"마스터 트리플 코스" , price1:"33,900원" , price2:"28,000원", order:"바로주문" , number:5 , rank:'normal'},
+            {src:"./images/p_shirimp.jpg" , alt:"블랙타이거 슈림프" , title:"블랙타이거 슈림프" , price1:"35,900원" , price2:"29,500원", order:"바로주문" , number:6 , rank:'normal'}
         ],
         toggle:false,
         state:'present'
