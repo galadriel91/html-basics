@@ -29,17 +29,17 @@
 <body>
     <a href="#main" class="skip">본문 바로가기</a>
     <main>
-        <section class="orderWrap">
+        <section class="mainOrderWrap">
             <h2 class="hide">여러가지 주문안내 메뉴입니다.</h2>
-            <div class="orderWrapTop">
-                <div class="orderWrapTopLeft">
+            <div class="mainOrderWrapTop">
+                <div class="mainOrderWrapTopLeft">
                     <a href="">
                         <img src="./images/order_left.png" alt="배달주문 오토바이 로고">
                         <p>배달주문</p>
                         <span>등급별 최대 30%</span>
                     </a>
                 </div>
-                <div class="orderWrapTopRight">
+                <div class="mainOrderWrapTopRight">
                     <a href="">
                         <img src="./images/order_right.png" alt="포장주문 안내 로고">
                         <p>포장주문</p>
@@ -47,15 +47,15 @@
                     </a>
                 </div>
             </div>
-            <div class="orderWrapBottom">
-                <div class="orderWrapBottomLeft">
+            <div class="mainOrderWrapBottom">
+                <div class="mainOrderWrapBottomLeft">
                     <a href="">
                         <img src="./images/domichat.png" alt="도미챗주문 로고">
                         <p>도미챗 주문</p>
                         <span>빠르고 간편한 채팅 주문 서비스</span>
                     </a>
                 </div>
-                <div class="orderWrapBottomCenter">
+                <div class="mainOrderWrapBottomCenter">
                     <a href="">
                         <img src="./images/ico-quick3.png" alt="퀵오더주문 로고">
                         <p>퀵오더</p>
@@ -63,7 +63,7 @@
                         <span>더 빠르게 주문해보세요!</span>
                     </a>
                 </div>
-                <div class="orderWrapBottomRight">
+                <div class="mainOrderWrapBottomRight">
                     <a href="">
                         <img src="./images/driving.png" alt="드라이빙 픽업 주문 로고">
                         <p>드라이빙 픽업 주문</p>
@@ -73,15 +73,15 @@
                 </div>
             </div>
         </section>
-        <section class="productsWrap" id="mainSectionProduct">
-            <div class="productsWrapContainer">
-                <div class="productsWrapContainerTitle">
+        <section class="mainProductsWrap" id="mainSectionProduct">
+            <div class="mainProductsWrapContainer">
+                <div class="mainProductsWrapContainerTitle">
                     <h2><a href="" :class="{on:!toggle}" @click.prevent="onClickToggle">실시간 베스트</a></h2>
                     <h2><a href="" :class="{on:toggle}" @click.prevent="onClickToggle">프리미엄 피자</a></h2>
                 </div>
-                <div class="productsWrapContainerPizza clear">
-                    <div class="productsWrapContainerPizzaBest" v-if="!toggle">
-                        <ul class="productsWrapContainerPizzaBestUpper">
+                <div class="mainProductsWrapContainerPizza clear">
+                    <div class="mainProductsWrapContainerPizzaBest" v-if="!toggle">
+                        <ul class="mainProductsWrapContainerPizzaBestUpper">
                             <li v-for="v in bestUpperArray" :key="v.number">
                                 <a href="">
                                     <div class="imageWrap">
@@ -108,7 +108,7 @@
                                 </strong>
                             </li>
                         </ul>
-                        <ul class="productsWrapContainerPizzaBestBottom">
+                        <ul class="mainProductsWrapContainerPizzaBestBottom">
                             <li v-for="v in bestBottomArray" :key="v.number">
                                 <a href="">
                                     <div class="imageWrap">
@@ -136,8 +136,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="productsWrapContainerPizzaPremium" v-else>
-                        <ul class="productsWrapContainerPizzaPremiumUpper">
+                    <div class="mainProductsWrapContainerPizzaPremium" v-else>
+                        <ul class="mainProductsWrapContainerPizzaPremiumUpper">
                             <li v-for="v in premiumUpperArray" :key="v.number">
                                 <a href="">
                                     <div class="imageWrap">
@@ -162,7 +162,7 @@
                                 </strong>
                             </li>
                         </ul>
-                        <ul class="productsWrapContainerPizzaPremiumBottom">
+                        <ul class="mainProductsWrapContainerPizzaPremiumBottom">
                             <li v-for="v in premiumBottomArray" :key="v.number">
                                 <a href="">
                                     <div class="imageWrap">
