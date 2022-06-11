@@ -8,7 +8,7 @@ const main = new Vue({
             {src:"./images/main_card3.png" , alt:"희망나눔 캠페인 20%할인"},
             {src:"./images/main_card4.png" , alt:"나만의 피자 먹고싶은 그날 !"}
         ],
-        state: 'currentLeft',
+        slideState: 'currentLeft',
         disable:true,
 
         // MainProducts
@@ -39,13 +39,13 @@ const main = new Vue({
     methods:{
         // MainEvent
         onClickLeft(){
-            if(this.state != 'currentLeft'){
-                this.state = 'currentLeft'
+            if(this.slideState != 'currentLeft'){
+                this.slideState = 'currentLeft'
                 this.disable = true
             }
         },
         onClickRight(){
-            this.state = "moveRight"
+            this.slideState = "moveRight"
             this.disable = false
         },
 
