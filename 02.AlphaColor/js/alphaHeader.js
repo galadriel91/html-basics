@@ -1,24 +1,36 @@
 (()=>{
     const NavList = document.querySelectorAll('.nav-list')
+    const title = document.querySelector('.title')
     const On = 'on'
+    let first = 0
+    let classTarget = null
+    
+    const onHandleClick = (e) => {
+        if(classTarget === e.target.parentNode){
+            classTarget.classList.toggle(On)
+        }else{
+            NavList.forEach(v=>v.classList.remove(On))
+            classTarget = e.target.parentNode
+            classTarget.classList.toggle(On)
+        }
+    }
 
     const checkWindowSize = () =>{
         if(window.innerWidth <= 1000){
             NavList.forEach((v)=>{
-                v.addEventListener('click' , ()=>{
-                    let classTarget = null
-                    NavList.forEach(v=>v.classList.remove(On))
-                    classTarget = v
-                    classTarget.classList.add(On)
-                })
+                v.addEventListener('click' , onHandleClick)
             })
+            first = 1
         }else{
+            if(first == 0){
+                return
+            }
+            classTarget = null
             NavList.forEach(v=>{
                 v.classList.remove(On)
-                v.addEventListener('click' , ()=>{
-                    v.classList.remove(On)
-                })
+                v.removeEventListener('click' , onHandleClick)
             })
+            title.focus()
         }
     }
     checkWindowSize()
