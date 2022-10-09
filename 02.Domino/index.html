@@ -169,6 +169,124 @@
                 </div>
             </div>
         </section>
+        <section class="mainProductsWrap" id="mainSectionProduct">
+            <div class="mainProductsWrapContainer">
+                <div class="mainProductsWrapContainerTitle">
+                    <h2><a href="" :class="{on:!toggle}" @click.prevent="onClickToggle">클래식 피자</a></h2>
+                    <h2><a href="" :class="{on:toggle}" @click.prevent="onClickToggle">프리미엄 피자</a></h2>
+                </div>
+                <div class="mainProductsWrapContainerPizza clear">
+                    <div class="mainProductsWrapContainerPizzaBest" v-if="!toggle">
+                        <ul class="mainProductsWrapContainerPizzaBestUpper">
+                            <li v-for="v in bestUpperArray" :key="v.number">
+                                <a href="">
+                                    <div class="imageWrap">
+                                        <img :src="v.src" :alt="v.alt">
+                                    </div>
+                                    <div class="textWrap clear">
+                                        <div class="textWrapLeft">
+                                            <h3>{{v.title}}</h3>
+                                            <div>
+                                                <span class="large">{{v.price1}}</span>
+                                                <span class="medium">{{v.price2}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="textWrapRight">
+                                            <div class="quickOrder">{{v.order}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <strong :class="v.rank" v-if="v.top">
+                                    BEST<br />{{v.number}}
+                                </strong>
+                                <strong :class="v.rank" v-else>
+                                    {{v.number}}
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="mainProductsWrapContainerPizzaBestBottom">
+                            <li v-for="v in bestBottomArray" :key="v.number">
+                                <a href="">
+                                    <div class="imageWrap">
+                                        <img :src="v.src" :alt="v.alt">
+                                    </div>
+                                    <div class="textWrap clear">
+                                        <div class="textWrapLeft">
+                                            <h3>{{v.title}}</h3>
+                                            <div>
+                                                <span class="large">{{v.price1}}</span>
+                                                <span class="medium">{{v.price2}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="textWrapRight">
+                                            <div class="quickOrder">{{v.order}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <strong :class="v.rank" v-if="v.top">
+                                    BEST<br />{{v.number}}
+                                </strong>
+                                <strong :class="v.rank" v-else>
+                                    {{v.number}}
+                                </strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mainProductsWrapContainerPizzaPremium" v-else>
+                        <ul class="mainProductsWrapContainerPizzaPremiumUpper">
+                            <li v-for="v in premiumUpperArray" :key="v.number">
+                                <a href="">
+                                    <div class="imageWrap">
+                                        <img :src="v.src" :alt="v.alt">
+                                    </div>
+                                    <div class="textWrap clear">
+                                        <div class="textWrapLeft">
+                                            <h3>{{v.title}}</h3>
+                                            <span class="large">{{v.price1}}</span>
+                                            <span class="medium">{{v.price2}}</span>
+                                        </div>
+                                        <div class="textWrapRight">
+                                            <div class="quickOrder">{{v.order}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <strong :class="v.rank" v-if="v.top">
+                                    BEST<br />{{v.number}}
+                                </strong>
+                                <strong :class="v.rank" v-else>
+                                    {{v.number}}
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="mainProductsWrapContainerPizzaPremiumBottom">
+                            <li v-for="v in premiumBottomArray" :key="v.number">
+                                <a href="">
+                                    <div class="imageWrap">
+                                        <img :src="v.src" :alt="v.alt">
+                                    </div>
+                                    <div class="textWrap clear">
+                                        <div class="textWrapLeft">
+                                            <h3>{{v.title}}</h3>
+                                            <span class="large">{{v.price1}}</span>
+                                            <span class="medium">{{v.price2}}</span>
+                                        </div>
+                                        <div class="textWrapRight">
+                                            <div class="quickOrder">{{v.order}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <strong :class="v.rank" v-if="v.top">
+                                    BEST<br />{{v.number}}
+                                </strong>
+                                <strong :class="v.rank" v-else>
+                                    {{v.number}}
+                                </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="mainEventWrap" id="mainSectionEvent">
             <h2 class="hide">이벤트 안내 영역입니다. 로그인 하시면 더 많은 정보를 확인할 수 있습니다.</h2>
             <div class="mainEventWrapTop clear">
