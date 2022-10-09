@@ -169,6 +169,66 @@
                 </div>
             </div>
         </section>
+        <section class="mainEventWrap" id="mainSectionEvent">
+            <h2 class="hide">이벤트 안내 영역입니다. 로그인 하시면 더 많은 정보를 확인할 수 있습니다.</h2>
+            <div class="mainEventWrapTop clear">
+                <div class="mainEventWrapTopLeft">
+                    <p>도미노피자의</p>
+                    <p>특별한 매니아 혜택</p>
+                    <p>누려보세요!</p>
+                    <a href="">로그인</a>
+                </div>
+                <div class="mainEventWrapTopRight">
+                    <ul :class="slideState">
+                        <li v-for="(item,index) in eventBannerArray">
+                            <a href="" :key="index"><img :src="item.src" :alt="item.alt"></a>
+                        </li>
+                    </ul>
+                    <button class="eleftBtn" :class="{disable:disable}" @click.prevent="onClickLeft">이전버튼</button>
+                    <button class="erightBtn" :class="{disable:!disable}" @click.prevent="onClickRight">다음버튼</button>
+                </div>
+            </div>
+            <div class="mainEventWrapBottom">
+                <ul>
+                    <li>
+                        <a href="">
+                            <em><img src="./images/info_1.png" alt="주문부터 결제까지 QUICK하게"></em>
+                            <div>
+                                <p>주문부터 결제까지 QUICK하게</p>
+                                <span>나만의 메뉴를 빠르게 주문하세요</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em><img src="./images/info_2.png" alt="단체 주문 서비스"></em>
+                            <div>
+                                <p>단체 주문 서비스</p>
+                                <span>30판 이상 주문도 간편하게</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em><img src="./images/info_3.png" alt="도미노 드라이빙 픽업 서비스"></em>
+                            <div>
+                                <p>도미노 드라이빙 픽업 서비스</p>
+                                <span>모바일로 주문하고 차에서 편하게 받자</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em><img src="./images/info_4.png" alt="도미노 피자와 함께하실 가맹점주님들을 모십니다."></em>
+                            <div>
+                                <p>가맹점 모집</p>
+                                <span>도미노 피자와 함께하실 <br/>가맹점주님들을 모십니다.</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer id="footer">
         <div class="goUpBtnWrap" :class="state">
@@ -298,6 +358,7 @@
     </footer>
     <script src="./js/dominoHeader.js"></script>
     <script src="./js/dominoVisual.js"></script>
+    <script src="./js/dominoMain.js"></script>
     <script src="./js/dominoFooter.js"></script>
 </body>
 </html>
