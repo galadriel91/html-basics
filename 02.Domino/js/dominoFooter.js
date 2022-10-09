@@ -16,16 +16,16 @@ const footer = new Vue({
                 top:document.body.offsetTop
             })
         },
-        // 스크롤시 헤더가 아래로 내려오는 효과
-        // onScroll(){
-        //     if(window.pageYOffset >= 150){
-        //         this.state = "scroll"
-        //     }else{
-        //         this.state = ""
-        //     }
-        // }
+        // 스크롤시 최상단 버튼 유/무 효과
+        onScroll(){
+            if(window.pageYOffset >= 150){
+                this.state = "scroll"
+            }else{
+                this.state = ""
+            }
+        }
     },
     mounted(){
-        // window.addEventListener('scroll' , this.onScroll)
+        window.addEventListener('scroll' , this.onScroll)
     }
 })
