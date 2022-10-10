@@ -1,8 +1,26 @@
-$('.visual').bxSlider({
+const slider = $('.visual').bxSlider({
     auto: true,
+    spped:3000,
     autoHover : true,
     responsive : true,
     pager: true,
     pagerType: 'short',
-    stopAutoOnClick: true,
+    stopAutoOnClick: false,
 });
+
+const prevBtn = $('.bx-prev')
+prevBtn.on('click' , ()=> {
+    slider.stopAuto(false)
+    timeout = setTimeout(()=>{
+        slider.startAuto(false)
+    },3000)
+})
+
+
+const nextBtn = $('.bx-next')
+nextBtn.on('click' , ()=> {
+    slider.stopAuto(false)
+    timeout = setTimeout(()=>{
+        slider.startAuto(false)
+    },3000)
+})
