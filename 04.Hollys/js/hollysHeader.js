@@ -56,4 +56,13 @@
         navCloseBtn.classList.remove('closeOn')
         globalNav.classList.remove('navOpen')
     })
+
+    const checkWindowSize = () =>{
+        if(window.innerWidth > 1000){
+            navCloseBtn.classList.remove('closeOn')
+            globalNav.classList.remove('navOpen')
+        }
+    }
+    checkWindowSize()
+    window.addEventListener('resize' , checkWindowSize)
 })();
