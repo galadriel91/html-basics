@@ -30,6 +30,7 @@
                 v.classList.remove(On)
                 v.removeEventListener('click' , onHandleClick)
             })
+            headerBottom.classList.remove('open')
             title.focus()
         }
     }
