@@ -1,7 +1,7 @@
 $('.visualWrap').slick({
     dots: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     arrows:false,
     accessibility:false,
     pauseOnDotsHover:true
