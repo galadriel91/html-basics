@@ -46,7 +46,8 @@
 - JS - [JqueryCDN](https://code.jquery.com/jquery-3.5.1.min.js) ,[SlickSlider](https://kenwheeler.github.io/slick/)
 
   
-
+##  상세정보
+- Figma [Figma](https://www.figma.com/file/njXxe2XZliaJZdBcbzYU0k/AlphaColor?node-id=2%3A1155&t=DnUOJWvSnZIEByqP-1)
   
 
 ##  사이트 이미지
