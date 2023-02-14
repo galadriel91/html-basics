@@ -30,7 +30,11 @@
 
 - Vue - [VueCDN](https://cdn.jsdelivr.net/npm/vue/dist/vue.js)
 
-##  결과
+##  상세정보
+- Figma [Figma](https://www.figma.com/file/1nHaSnBesorJAZGUKqHJjS/Domino?node-id=128%3A11&t=qA3NSEDUHhyOb78m-1)
+  
+
+##  사이트 이미지
 
 ![screencapture-127-0-0-1-5500-index-html-2022-10-10-09_57_01](https://user-images.githubusercontent.com/49547410/194787616-c1df9813-7234-4f26-abe4-da283ec48c92.png)
 
