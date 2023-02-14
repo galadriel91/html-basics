@@ -11,20 +11,3 @@ const slider2 = $('.mainProductVisual').bxSlider({
     pager: false,
     stopAutoOnClick: false,
 });
-
-// const prevBtn = $('.bx-prev')
-// prevBtn.on('click' , ()=> {
-//     slider.stopAuto(false)
-//     timeout = setTimeout(()=>{
-//         slider.startAuto(false)
-//     },3000)
-// })
-
-
-// const nextBtn = $('.bx-next')
-// nextBtn.on('click' , ()=> {
-//     slider.stopAuto(false)
-//     timeout = setTimeout(()=>{
-//         slider.startAuto(false)
-//     },3000)
-// })
