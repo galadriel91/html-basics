@@ -1,6 +1,6 @@
 const slider = $('.visual').bxSlider({
     auto: true,
-    spped:3000,
+    speed:1000,
     autoHover : true,
     responsive : true,
     pager: true,
