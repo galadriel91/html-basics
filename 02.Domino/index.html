@@ -189,120 +189,69 @@
         </section>
         <section class="mainProductsWrap" id="mainSectionProduct">
             <div class="mainProductsWrapContainer">
-                <div class="mainProductsWrapContainerTitle">
-                    <h2><a href="" :class="{on:!toggle}" @click.prevent="onClickToggle">클래식 피자</a></h2>
-                    <h2><a href="" :class="{on:toggle}" @click.prevent="onClickToggle">프리미엄 피자</a></h2>
-                </div>
-                <div class="mainProductsWrapContainerPizza clear">
-                    <div class="mainProductsWrapContainerPizzaBest" v-if="!toggle">
-                        <ul class="mainProductsWrapContainerPizzaBestUpper">
-                            <li v-for="v in bestUpperArray" :key="v.number">
-                                <a href="">
-                                    <div class="imageWrap">
-                                        <img :src="v.src" :alt="v.alt">
-                                    </div>
-                                    <div class="textWrap clear">
-                                        <div class="textWrapLeft">
-                                            <h3>{{v.title}}</h3>
-                                            <div>
-                                                <span class="large">{{v.price1}}</span>
-                                                <span class="medium">{{v.price2}}</span>
-                                            </div>
-                                        </div>
-                                        <div class="textWrapRight">
-                                            <div class="quickOrder">{{v.order}}</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <strong :class="v.rank" v-if="v.top">
-                                    BEST<br />{{v.number}}
-                                </strong>
-                                <strong :class="v.rank" v-else>
-                                    {{v.number}}
-                                </strong>
-                            </li>
-                        </ul>
-                        <ul class="mainProductsWrapContainerPizzaBestBottom">
-                            <li v-for="v in bestBottomArray" :key="v.number">
-                                <a href="">
-                                    <div class="imageWrap">
-                                        <img :src="v.src" :alt="v.alt">
-                                    </div>
-                                    <div class="textWrap clear">
-                                        <div class="textWrapLeft">
-                                            <h3>{{v.title}}</h3>
-                                            <div>
-                                                <span class="large">{{v.price1}}</span>
-                                                <span class="medium">{{v.price2}}</span>
-                                            </div>
-                                        </div>
-                                        <div class="textWrapRight">
-                                            <div class="quickOrder">{{v.order}}</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <strong :class="v.rank" v-if="v.top">
-                                    BEST<br />{{v.number}}
-                                </strong>
-                                <strong :class="v.rank" v-else>
-                                    {{v.number}}
-                                </strong>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mainProductsWrapContainerPizzaPremium" v-else>
-                        <ul class="mainProductsWrapContainerPizzaPremiumUpper">
-                            <li v-for="v in premiumUpperArray" :key="v.number">
-                                <a href="">
-                                    <div class="imageWrap">
-                                        <img :src="v.src" :alt="v.alt">
-                                    </div>
-                                    <div class="textWrap clear">
-                                        <div class="textWrapLeft">
-                                            <h3>{{v.title}}</h3>
-                                            <span class="large">{{v.price1}}</span>
-                                            <span class="medium">{{v.price2}}</span>
-                                        </div>
-                                        <div class="textWrapRight">
-                                            <div class="quickOrder">{{v.order}}</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <strong :class="v.rank" v-if="v.top">
-                                    BEST<br />{{v.number}}
-                                </strong>
-                                <strong :class="v.rank" v-else>
-                                    {{v.number}}
-                                </strong>
-                            </li>
-                        </ul>
-                        <ul class="mainProductsWrapContainerPizzaPremiumBottom">
-                            <li v-for="v in premiumBottomArray" :key="v.number">
-                                <a href="">
-                                    <div class="imageWrap">
-                                        <img :src="v.src" :alt="v.alt">
-                                    </div>
-                                    <div class="textWrap clear">
-                                        <div class="textWrapLeft">
-                                            <h3>{{v.title}}</h3>
-                                            <span class="large">{{v.price1}}</span>
-                                            <span class="medium">{{v.price2}}</span>
-                                        </div>
-                                        <div class="textWrapRight">
-                                            <div class="quickOrder">{{v.order}}</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <strong :class="v.rank" v-if="v.top">
-                                    BEST<br />{{v.number}}
-                                </strong>
-                                <strong :class="v.rank" v-else>
-                                    {{v.number}}
-                                </strong>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <h2>MENU</h2>
+                <ul class="mainProductVisual">
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_bacon.jpg" alt="베이컨 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>아보카도 새우</h3>
+                                <div>
+                                    <p>L<span>27,900원~</span></p>
+                                    <p>M<span>20,500원~</span></p>
+                                </div>
+                                <p>#슈퍼시드 화이버 함유 도우로 더 맛있게!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_bacon.jpg" alt="베이컨 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>아보카도 새우</h3>
+                                <div>
+                                    <p>L<span>27,900원~</span></p>
+                                    <p>M<span>20,500원~</span></p>
+                                </div>
+                                <p>#슈퍼시드 화이버 함유 도우로 더 맛있게!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_bacon.jpg" alt="베이컨 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>아보카도 새우</h3>
+                                <div>
+                                    <p>L<span>27,900원~</span></p>
+                                    <p>M<span>20,500원~</span></p>
+                                </div>
+                                <p>#슈퍼시드 화이버 함유 도우로 더 맛있게!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_bacon.jpg" alt="베이컨 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>아보카도 새우</h3>
+                                <div>
+                                    <p>L<span>27,900원~</span></p>
+                                    <p>M<span>20,500원~</span></p>
+                                </div>
+                                <p>#슈퍼시드 화이버 함유 도우로 더 맛있게!</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="mainEventWrap" id="mainSectionEvent">
@@ -320,8 +269,6 @@
                             <a href="" :key="index"><img :src="item.src" :alt="item.alt"></a>
                         </li>
                     </ul>
-                    <!-- <button class="eleftBtn" :class="{disable:disable}" @click.prevent="onClickLeft">이전버튼</button>
-                    <button class="erightBtn" :class="{disable:!disable}" @click.prevent="onClickRight">다음버튼</button> -->
                 </div>
             </div>
         </section>
