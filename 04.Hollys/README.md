@@ -41,10 +41,13 @@
 
 - JS - [JqueryCDN](https://code.jquery.com/jquery-3.5.1.min.js) ,[SlickSlider](https://kenwheeler.github.io/slick/) , [AOS](https://michalsnik.github.io/aos/)
 
-  
+##  상세정보
+- Figma [Figma](https://www.figma.com/file/tkeir6ApbYs8pfqhT1lImF/Hollys-Coffee?node-id=1%3A1156&t=9GS594L7vdv0Rof5-1)
+    
 
 ##  사이트 이미지
 
   
 
-![screencapture-127-0-0-1-5500-index-html-2022-09-24-21_08_49](https://user-images.githubusercontent.com/49547410/192097453-ffe96f9f-d24c-41f3-bf32-be7d49062385.png)
+![screencapture-file-C-Users-g-ala-OneDrive-Desktop-Basics-Html-04-Hollys-index-html-2023-02-19-17_58_09](https://user-images.githubusercontent.com/49547410/219939720-8eeea7f8-ccb6-4b93-a6f7-cdc5912c150c.png)
+
