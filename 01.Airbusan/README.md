@@ -36,13 +36,11 @@
 
   
 
-- Editor - [PhotoShop](https://www.adobe.com/kr/) , [VScode](https://code.visualstudio.com/)
+- Editor - [PhotoShop](https://www.adobe.com/kr/) , [VScode](https://code.visualstudio.com/) , [Figma](https://www.figma.com/)
 
-  
 
-  
 
-- JS - [JqueryCDN](https://code.jquery.com/jquery-3.5.1.min.js) ,[SlickSlider](https://kenwheeler.github.io/slick/)
+- JS - [JqueryCDN](https://code.jquery.com/jquery-3.5.1.min.js) , [SlickSlider](https://kenwheeler.github.io/slick/)
 
   
 ##  상세정보
