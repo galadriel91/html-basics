@@ -44,7 +44,7 @@
 
   
 ##  상세정보
-- Figma [Figma](https://www.figma.com/file/qrrQeB2b7JCWGIjw88oFm5/AirBusan?node-id=1%3A2285&t=6hOWpgJVtBF3jmA8-1)
+- Figma [Figma](https://www.figma.com/file/qrrQeB2b7JCWGIjw88oFm5/AirBusan?node-id=1%3A2285&t=D9PWeODphduoPUEu-1)
   
 
 ##  사이트 이미지
