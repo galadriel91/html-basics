@@ -1,11 +1,10 @@
 $('.menuSlide').slick({
     autoplay: true,
     autoplaySpeed: 2500,
+    infinite:true,
     arrows:false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    accessibility:false,
-    pauseOnDotsHover:true,
     responsive: [
         {
             breakpoint: 1150,
@@ -35,4 +34,8 @@ $('.menuSlide').slick({
             }
         },
     ]
+});
+
+$('.menuSlide').on('touchstart', e => {
+    $('.menuSlide').slick('slickPlay');
 });
