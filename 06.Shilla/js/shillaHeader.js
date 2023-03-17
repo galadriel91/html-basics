@@ -15,14 +15,28 @@
 
     // 헤더 메뉴 버튼
     const menuBtn = document.querySelector('.menu')
+    const mobileMenu = document.querySelector('.mobileGnb')
     const handleMenu = () =>{ 
         if(menuBtn.classList.contains('xi-bars')){
             menuBtn.classList.remove('xi-bars')
             menuBtn.classList.add('xi-close')
+            mobileMenu.classList.add('on')
         }else{
             menuBtn.classList.remove('xi-close')
             menuBtn.classList.add('xi-bars')
+            mobileMenu.classList.remove('on')
         }
     }
     menuBtn.addEventListener('click' , handleMenu)
+
+    const initMenu = () => {
+        if(window.innerWidth > 900){
+            menuBtn.classList.remove('xi-close')
+            menuBtn.classList.add('xi-bars')
+            mobileMenu.classList.remove('on')
+        }
+    }
+    initMenu()
+
+    window.addEventListener('resize' , initMenu)
 })();
