@@ -4,6 +4,14 @@ $('.slide').slick({
     autoplay: true,
     autoplaySpeed: 4000,
     arrows: true,
+    responsive: [
+        {
+            breakpoint: 900,
+            settings: {
+                arrows:false
+            }
+        },
+    ]
 });
 
 const btns = document.querySelectorAll('.slick-arrow')

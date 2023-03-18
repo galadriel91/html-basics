@@ -17,7 +17,7 @@ $('.promotionSlide').slick({
             }
         },
         {
-            breakpoint: 650,
+            breakpoint: 651,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll:1,

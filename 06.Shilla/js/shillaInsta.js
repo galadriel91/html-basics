@@ -17,7 +17,7 @@ $('.instaSlide').slick({
             }
         },
         {
-            breakpoint: 650,
+            breakpoint: 651,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
