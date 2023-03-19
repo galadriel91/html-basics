@@ -4,8 +4,6 @@ $('.instaSlide').slick({
     arrows:false,
     slidesToShow: 5,
     slidesToScroll: 1,
-    accessibility:false,
-    pauseOnDotsHover:true,
     responsive: [
         {
             breakpoint: 900,
@@ -35,7 +33,7 @@ $('.instaSlide').slick({
             }
         },
         {
-            breakpoint: 400,
+            breakpoint: 401,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -44,4 +42,8 @@ $('.instaSlide').slick({
             }
         },
     ]
+});
+
+$('.instaSlide').on('touchstart', e => {
+    $('.instaSlide').slick('slickPlay');
 });

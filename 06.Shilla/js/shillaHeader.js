@@ -37,6 +37,6 @@
         }
     }
     initMenu()
-
+    console.log(window.innerWidth)
     window.addEventListener('resize' , initMenu)
 })();

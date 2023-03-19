@@ -10,7 +10,7 @@ $('.slide').slick({
             settings: {
                 arrows:false
             }
-        },
+        }
     ]
 });
 

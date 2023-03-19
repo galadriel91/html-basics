@@ -4,8 +4,6 @@ $('.mobileSlide').slick({
     arrows:false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    accessibility:false,
-    pauseOnDotsHover:true,
     responsive: [
         {
             breakpoint: 970,
@@ -26,4 +24,8 @@ $('.mobileSlide').slick({
             }
         },
     ]
+});
+
+$('.mobileSlide').on('touchstart', e => {
+    $('.mobileSlide').slick('slickPlay');
 });
