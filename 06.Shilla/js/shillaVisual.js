@@ -6,7 +6,7 @@ $('.slide').slick({
     arrows: true,
     responsive: [
         {
-            breakpoint: 900,
+            breakpoint: 961,
             settings: {
                 arrows:false
             }
