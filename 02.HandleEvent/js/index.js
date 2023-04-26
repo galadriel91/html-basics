@@ -1,11 +1,14 @@
-const targets = document.querySelectorAll('.target')
-const container = document.querySelector('.container')
+(()=>{
+    const container = document.querySelector('.container')
 
-const handleClick = (e) => {
-    container.removeChild(e.currentTarget)
-}
+    const handleClick = (e) => {
+        if(e.target.classList.contains('target')){
+            container.removeChild(e.target)
+        }else{
+            return
+        }
+    }
 
-// 개별 태그에 전부 이벤트를 걸어 주었다.
-for(let i = 0 ; i < targets.length; i++){
-    targets[i].addEventListener('click' , handleClick)
-}
+    // 이벤트 위임을 적용.
+    container.addEventListener('click' , handleClick)
+})()
