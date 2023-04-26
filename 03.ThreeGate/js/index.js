@@ -1,18 +1,25 @@
 (()=>{
-    const gates = document.querySelectorAll('.gate')
+    const container = document.querySelector('.container')
     let currentTarget = null
 
-    const handleClick = (e) => {
+    const removeClass = () => {
         if(currentTarget){
             currentTarget.classList.remove('open')
         }
-        console.log(e.currentTarget)
-        e.currentTarget.classList.add('open')
-        currentTarget = e.currentTarget
     }
 
-    for(let i=0; i<gates.length; i++){
-        gates[i].addEventListener('click' , handleClick)
+    const addClass = (elem) => {
+        elem.classList.add('open')
+        currentTarget = elem
     }
 
+    const handleClick = (e) => {
+        removeClass()
+        const targetElem = e.target.parentNode
+        if(targetElem !== document.body){
+            addClass(targetElem)
+        }
+    }
+
+    container.addEventListener('click' , handleClick)
 })();
