@@ -1,21 +1,29 @@
-const containerElem = document.querySelector('.container')
+(()=>{
+    const containerElem = document.querySelector('.container')
 
-
-const handleClick = (e) => {
-    const targetElem = e.target
-    if(targetElem.parentNode.classList.contains('firstCard')){
-        targetElem.parentNode.classList.add('open')
-    }
-    if(targetElem.parentNode.classList.contains('lastCard')){
-        targetElem.parentNode.classList.add('open')
-    }
-    if(targetElem.classList.contains('closeBtn')){
+    const handleClose = () => {
         const openElem = document.querySelectorAll('.open')
         openElem[1].classList.remove('open')
         setTimeout(()=>{
             openElem[0].classList.remove('open')
         },500)
     }
-}
 
-containerElem.addEventListener('click', handleClick)
+    const handleOpenCard = (elem, className) => {
+        if(elem.parentNode.classList.contains(className)){
+            elem.parentNode.classList.add('open')
+        }
+    }
+
+    const handleClick = (e) => {
+        const targetElem = e.target
+
+        handleOpenCard(e.target, 'onOpen')
+
+        if(targetElem.classList.contains('closeBtn')){
+            handleClose()
+        }
+    }
+
+    containerElem.addEventListener('click', handleClick)
+})();
