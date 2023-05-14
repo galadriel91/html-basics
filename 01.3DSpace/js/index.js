@@ -1,6 +1,7 @@
 (()=>{
     const wallWrap = document.querySelector('.spaceWallWrap')
     const spaceWrap = document.querySelector('.spaceWrap')
+    const progress = document.querySelector('.progress')
     const mousePos={
         x:0,
         y:0
@@ -13,6 +14,7 @@
 
     const handleScroll = () => {
         const scrollPer = window.scrollY / maxScrollValue
+        progress.style.width = `${scrollPer * 100}%`
         wallWrap.style.transform = `translateZ(${scrollPer * 980 - 490}vw)`
     }
 
